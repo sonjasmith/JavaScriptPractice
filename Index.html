@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Foo.js"></script>
+    <script type="text/javascript">
+        alert("Goodbye");
+        function printOneToTen() {
+            for (var i = 1; i <= 10; i++) {
+                console.log(i);
+            }
+        }
+
+        var counter = 0;
+        while (counter <= 10) {
+            console.log('hello');
+            counter++;
+        }
+        printOneToTen();
+
+        var array = ["Zero", "One", "Two" ];
+        for (var i = 0; i < array.length; i++) {
+            console.log('The item at index ' + i + ' is ' + array[i]);
+        }
+
+
+        var myObject = {
+            name: "Sonja",
+            age: "Old",
+            email: "SonjaSmith@outlook.com",
+            pets: [
+            {type: "Dog", name: "Roscoe"},
+            {type: "Dog", name: "Biggs"},
+        ]
+        };
+
+        console.log("Name", myObject.pets[1]);
+
+        var x;
+        if (true) {
+            x = 5;
+        }
+        console.log(x);
+
+        //scope
+        function test() {
+            var six = 6;
+        }
+
+        test();
+        console.log(six);
+
+    </script>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    Hello World
+</body>
+</html>
